@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Inter", serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgb(73, 65, 65);
+}
+
+.top_bar {
+  height: 241px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.search_bar input {
+  width: 285px;
+  height: 40px;
+  padding-left: 10px;
+  border: 1px solid #ff0909;
+  background-color: transparent;
+  color: white;
+}
+.search_bar input::placeholder {
+  font-family: Inter;
+  color: white;
+  font-size: 16px;
+}
+
+.nav_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 20px;
+  gap: 14px;
+  position: relative;
+}
+
+.nav_buttons button {
+  background-color: #ff4343;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 16px;
+}
+
+/* FoodZone Area Components css here.. */
+.bg_image {
+  height: calc(100vh - 271px);
+  object-fit: cover;
+  background-size: cover;
+  background-image: url("bg.svg");
+  /* filter: brightness(80%); */
+}
+
+/* .card_main_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 340px;
+  height: 200px;
+}
+
+.card {
+  color: rgb(255, 230, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 19.45px;
+  backdrop-filter: blur(26px);
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
+.item_details {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.card_main_container button {
+  font-family: Inter;
+  padding: 4px 6px;
+  background-color: #ff4343;
+  color: white;
+  border: none;
+} */
+
+.card_main_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%; /* Allow it to take full available width */
+  max-width: 1000px;
+  margin: auto; /* Center the container */
+  justify-content: center; /* Align cards properly */
+}
+
+.card {
+  margin-top: 50px;
+  color: rgb(255, 230, 230);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; /* Stack image and details */
+  border-radius: 19.45px;
+  backdrop-filter: blur(26px);
+  width: 320px;
+  padding: 15px;
+  background: rgba(214, 150, 150, 0.137);
+  box-shadow: 0px 2px 4px rgba(51, 49, 49, 0.1);
+}
+
+.item_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.item_details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item_details h2 {
+  margin-bottom: 10px;
+}
+
+.card_main_container button {
+  font-family: Inter, sans-serif;
+  padding: 8px 12px;
+  background-color: #ff4343;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
